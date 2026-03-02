@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Logs (optional)
+logs/*.log
+
+# Models (optional - uncomment if you don't want to commit models)
+# models/*.joblib
+
+# Reports (optional - but usually OK to keep plots/csv)
+# reports/
