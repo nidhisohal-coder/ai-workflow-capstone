@@ -71,36 +71,52 @@ API ENDPOINTS
 
 Train Model: POST /train
 
-Predict Revenue: POST /predict { “country”: “all”, “date”: “YYYY-MM-DD”
+Predict Revenue: 
+POST /predict 
+{ 
+“country”: “all”, 
+“date”: “YYYY-MM-DD”
 }
 
-Returns: - Predicted 30-day revenue - Date used for feature row - Input
-echo
+Returns: 
+- Predicted 30-day revenue
+- Date used for feature row
+- Input echo
 
 View Logs: GET /logs
 
-Logs capture: - Timestamp - Country - Requested date - Used row date -
-Prediction value
+Logs capture: 
+- Timestamp
+- Country
+- Requested date
+- Used row date
+- Prediction value
 
 ------------------------------------------------------------------------
 
 DOCKER USAGE
 
-Build image: docker build -t capstone-api .
+Build image: 
+docker build -t capstone-api .
 
-Run container: docker run -p 8080:8080 capstone-api
+Run container: 
+docker run -p 8080:8080 capstone-api
 
-Run tests inside container: docker run –rm capstone-api python -m pytest
--q
+Run tests inside container: 
+docker run –rm capstone-api python -m pytest -q
 
 ------------------------------------------------------------------------
 
 POST-PRODUCTION MONITORING
 
-Run monitoring script: python scripts/post_production_analysis.py
+Run monitoring script: 
+python scripts/post_production_analysis.py
 
-Outputs: - MAE (Mean Absolute Error) - RMSE (Root Mean Squared Error) -
-Time-series monitoring plot - Evaluation CSV
+Outputs: 
+- MAE (Mean Absolute Error)
+- RMSE (Root Mean Squared Error)
+- Time-series monitoring plot
+- Evaluation CSV
 
 The monitoring pipeline compares API predictions to a reconstructed gold
 standard from production data.
@@ -123,4 +139,5 @@ enterprise deployment standards.
 
 AUTHOR
 
-Nidhi Sohal AI Enterprise Workflow Capstone
+Nidhi Sohal 
+AI Enterprise Workflow Capstone
