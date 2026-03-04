@@ -33,10 +33,19 @@ making this a supervised time-series forecasting problem.
 
 END-TO-END ARCHITECTURE
 
-Raw Data ↓ Feature Engineering (Time-Series Lags & Rolling Features) ↓
-Model Training & Validation ↓ Serialized Model Artifact ↓ Flask API
-(Train / Predict / Logs) ↓ Docker Container ↓ Production Simulation &
-Monitoring
+Raw Data
+  ↓
+Feature Engineering (Time-Series Lags & Rolling Features)
+  ↓
+Model Training & Validation
+  ↓
+Serialized Model Artifact
+  ↓
+Flask API (Train / Predict / Logs)
+  ↓
+Docker Container
+  ↓
+Production Simulation & Monitoring
 
 ------------------------------------------------------------------------
 
